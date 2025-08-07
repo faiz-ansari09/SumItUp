@@ -7,17 +7,12 @@ import Alert from "./components/Alert";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [mode, setMode] = useState("light"); // Whether dark mode is enabled or not
+  const [mode, setMode] = useState("light");
   const [alert, setAlert] = useState(null);
 
   const showAlert = (message, type) => {
-    setAlert({
-      msg: message,
-      type: type,
-    });
-    setTimeout(() => {
-      setAlert(null);
-    }, 1500);
+    setAlert({ msg: message, type: type });
+    setTimeout(() => setAlert(null), 1500);
   };
 
   const toggleMode = () => {
@@ -31,35 +26,32 @@ function App() {
       showAlert("Light mode has been enabled", "success");
     }
   };
+
   return (
-    <>
-      <Router>
-        <Navbar
-          title="SumItUp"
-          mode={mode}
-          toggleMode={toggleMode}
-          key={new Date()}
-        />
-        <Alert alert={alert} />
-        <div className="container my-3">
-          <Routes>
-            {/* /users --> Component 1
-             /users/home --> Component 2 */}
-            <Route path="/about" element={<About mode={mode} />} />
-            <Route
-              path="/"
-              element={
-                <TextForm
-                  showAlert={showAlert}
-                  heading="Try SumItUp - word counter, character counter, remove extra spaces"
-                  mode={mode}
-                />
-              }
-            />
-          </Routes>
-        </div>
-      </Router>
-    </>
+    <Router>
+      <Navbar
+        title="SumItUp"
+        mode={mode}
+        toggleMode={toggleMode}
+        aboutText="About"
+      />
+      <Alert alert={alert} />
+      <div className="container my-3">
+        <Routes>
+          <Route path="/about" element={<About mode={mode} />} />
+          <Route
+            path="/"
+            element={
+              <TextForm
+                showAlert={showAlert}
+                heading="Try SumItUp"
+                mode={mode}
+              />
+            }
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

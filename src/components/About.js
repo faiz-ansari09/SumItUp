@@ -1,11 +1,7 @@
 import React from "react";
 
 export default function About(props) {
-  // const [myStyle, setMyStyle] = useState({
-  //     color: 'black',
-  //     backgroundColor: 'white'
-  // })
-  let myStyle = {
+  const myStyle = {
     color: props.mode === "dark" ? "white" : "#042743",
     backgroundColor: props.mode === "dark" ? "rgb(36 74 104)" : "white",
   };
@@ -30,7 +26,7 @@ export default function About(props) {
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              <strong>Analyze Your text </strong>
+              <strong>Analyze Your Text</strong>
             </button>
           </h2>
           <div
@@ -41,10 +37,12 @@ export default function About(props) {
           >
             <div className="accordion-body" style={myStyle}>
               SumItUp gives you a way to analyze your text quickly and
-              efficiently. Be it word count, character count or
+              efficiently — be it word count, character count, or removing extra
+              spaces.
             </div>
           </div>
         </div>
+
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingTwo">
             <button
@@ -56,7 +54,7 @@ export default function About(props) {
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              <strong>Free to use </strong>
+              <strong>Free to Use</strong>
             </button>
           </h2>
           <div
@@ -66,13 +64,12 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body" style={myStyle}>
-              SumItUp is a free character counter tool that provides instant
-              character count & word count statistics for a given text. SumItUp
-              reports the number of words and characters. Thus it is suitable
-              for writing text with word/ character limit.
+              SumItUp is a free character and word counter tool that gives
+              instant stats and helps meet word/character limits.
             </div>
           </div>
         </div>
+
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingThree">
             <button
@@ -84,7 +81,7 @@ export default function About(props) {
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              <strong>Browser Compatible </strong>
+              <strong>Browser Compatible</strong>
             </button>
           </h2>
           <div
@@ -94,10 +91,9 @@ export default function About(props) {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body" style={myStyle}>
-              This word counter software works in any web browsers such as
-              Chrome, Firefox, Internet Explorer, Safari, Opera. It suits to
-              count characters in facebook, blog, books, excel document, pdf
-              document, essays, etc.
+              This app works in modern browsers like Chrome, Firefox, Safari,
+              Edge, and Opera. It also supports content from platforms like
+              Facebook, blogs, PDFs, and more.
             </div>
           </div>
         </div>
