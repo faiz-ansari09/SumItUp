@@ -29,6 +29,7 @@ SumItUp is a simple, fast, and responsive React web application for analyzing an
 
 ## 📁 Project Structure
 
+```
 ├── public/
 ├── src/
 │ ├── components/
@@ -41,6 +42,7 @@ SumItUp is a simple, fast, and responsive React web application for analyzing an
 │ ├── App.css
 │ └── index.css
 └── README.md
+```
 
 ---
 
