@@ -48,7 +48,7 @@ SumItUp is a simple, fast, and responsive React web application for analyzing an
 
 ## 🔧 Setup Instructions
 
-1. **Clone the repository**
+ **Clone the repository**
    ```bash
    git clone https://github.com/faiz-ansari09/SumItUp
    cd SumItUp
