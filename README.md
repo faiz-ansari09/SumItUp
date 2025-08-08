@@ -30,18 +30,26 @@ SumItUp is a simple, fast, and responsive React web application for analyzing an
 ## 📁 Project Structure
 
 ```
+├── node_modules/
 ├── public/
+│   ├── index.html
+│   └── favicon.ico
 ├── src/
-│ ├── components/
-│ │ ├── Navbar.js
-│ │ ├── TextForm.js
-│ │ ├── Alert.js
-│ ├── App.js
-│ ├── About.js
-│ ├── index.js
-│ ├── App.css
-│ └── index.css
-└── README.md
+│   ├── components/
+│   │   ├── About.js
+│   │   ├── Alert.js
+│   │   ├── Navbar.js
+│   │   └── TextForm.js
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   └── index.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+└── vercel.json
 ```
 
 ---
