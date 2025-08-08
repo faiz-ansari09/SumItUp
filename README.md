@@ -69,6 +69,6 @@ SumItUp/
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/faiz-ansari09/SumItUp/blob/main/LICENSE)
+This project is licensed under the [MIT License](https://github.com/faiz-ansari09/SumItUp/blob/master/LICENSE)
 
 ---
