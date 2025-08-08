@@ -6,14 +6,14 @@ SumItUp is a simple, fast, and responsive React web application for analyzing an
 
 ## 🚀 Features
 
-- ✅ Word counter
-- ✅ Character counter
-- ✅ Remove extra spaces
-- ✅ Light/Dark mode toggle
-- ✅ Responsive design
-- ✅ Real-time alerts
-- ✅ Accordion-based About section
-- ✅ Browser-compatible
+- ✅ Word counter.
+- ✅ Character counter.
+- ✅ Remove extra spaces.
+- ✅ Light/Dark mode toggle.
+- ✅ Responsive design.
+- ✅ Real-time alerts.
+- ✅ Accordion-based About section.
+- ✅ Browser-compatible.
 
 ---
 
@@ -30,6 +30,7 @@ SumItUp is a simple, fast, and responsive React web application for analyzing an
 ## 📁 Project Structure
 
 ```
+SumItUp/
 ├── node_modules/
 ├── public/
 │   ├── index.html
@@ -42,7 +43,6 @@ SumItUp is a simple, fast, and responsive React web application for analyzing an
 │   │   └── TextForm.js
 │   ├── App.css
 │   ├── App.js
-│   ├── App.test.js
 │   ├── index.css
 │   └── index.js
 ├── .gitignore
@@ -54,10 +54,21 @@ SumItUp is a simple, fast, and responsive React web application for analyzing an
 
 ---
 
-## 🔧 Setup Instructions
+## 🔧 Installation
 
  **Clone the repository**
    ```bash
    git clone https://github.com/faiz-ansari09/SumItUp
+   ```
+   **Navigate to project folder**
+   ```bash
    cd SumItUp
+   ```
 
+---
+
+## License
+
+This project is licensed under the [MIT License](https://github.com/faiz-ansari09/SumItUp/blob/main/LICENSE)
+
+---
